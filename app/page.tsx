@@ -1,5 +1,5 @@
 import { Button, ButtonProps } from "@/components/ui/button";
-import { IconButton } from "@/components/ui/icon-button";
+import { IconButton, IconButtonProps } from "@/components/ui/icon-button";
 import { PlusIcon } from "@radix-ui/react-icons";
 
 import {
@@ -56,6 +56,7 @@ const variants = [
   "danger-ghost",
 ] as ButtonProps["variant"][];
 const sizes = ["lg", "sm", "md", "xl", "2xl"] as ButtonProps["size"][];
+const iconButtonSizes = ["lg", "sm", "md", "xl"] as IconButtonProps["size"][];
 
 const Buttons = () => {
   return (
@@ -87,28 +88,26 @@ const Buttons = () => {
       <div className="order-2 p-5">
         {variants.map((variant) => (
           <div key={variant} className="mb-4 flex items-center gap-2">
-            {sizes
-              .filter((size) => size !== "2xl")
-              .map((size) => (
-                <React.Fragment key={size}>
-                  <Button
-                    key={`${variant}-${size}`}
-                    variant={variant === "default" ? undefined : variant}
-                    size={size === "lg" ? undefined : size}
-                  >
-                    Button
-                    <PlusIcon />
-                  </Button>
+            {iconButtonSizes.map((size) => (
+              <React.Fragment key={size}>
+                <Button
+                  key={`${variant}-${size}`}
+                  variant={variant === "default" ? undefined : variant}
+                  size={size === "lg" ? undefined : size}
+                >
+                  Button
+                  <PlusIcon />
+                </Button>
 
-                  <IconButton
-                    key={`${variant}-${size}`}
-                    variant={variant === "default" ? undefined : variant}
-                    size={size === "lg" ? undefined : size}
-                  >
-                    <PlusIcon />
-                  </IconButton>
-                </React.Fragment>
-              ))}
+                <IconButton
+                  key={`${variant}-${size}`}
+                  variant={variant === "default" ? undefined : variant}
+                  size={size === "lg" ? undefined : size}
+                >
+                  <PlusIcon />
+                </IconButton>
+              </React.Fragment>
+            ))}
             <Button
               variant={variant === "default" ? undefined : variant}
               disabled
@@ -152,21 +151,21 @@ const Accordions = () => {
           <AccordionItem value="item-3">
             <AccordionTrigger>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger disabled>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
@@ -192,14 +191,14 @@ const Accordions = () => {
           <AccordionItem value="item-3">
             <AccordionTrigger>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger disabled>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
@@ -224,14 +223,14 @@ const Accordions = () => {
           <AccordionItem value="item-3">
             <AccordionTrigger>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger disabled>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
@@ -239,7 +238,7 @@ const Accordions = () => {
           <AccordionItem value="item-5">
             <AccordionTrigger>Is it animated?</AccordionTrigger>
             <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
