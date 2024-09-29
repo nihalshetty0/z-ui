@@ -274,7 +274,7 @@ const config = {
           "tile-02": "hsl(var(--border-tile-02) / <alpha-value>)",
           "tile-03": "hsl(var(--border-tile-03) / <alpha-value>)",
           inverse: "hsl(var(--border-inverse) / <alpha-value>)",
-          disabled: "hsl(var(--border-disabled) / <alpha-value>)",
+          disabled: "hsl(var(--border-disabled) / var(--border-disabled-opacity))",
         },
 
         /* Text */
@@ -284,7 +284,7 @@ const config = {
           placeholder: "hsl(var(--text-placeholder) / <alpha-value>)",
           "on-color": "hsl(var(--text-on-color) / <alpha-value>)",
           "on-color-disabled":
-            "hsl(var(--text-on-color-disabled) / <alpha-value>)",
+            "hsl(var(--text-on-color-disabled) / var(--text-on-color-disabled-opacity))",
           helper: "hsl(var(--text-helper) / <alpha-value>)",
           error: "hsl(var(--text-error) / <alpha-value>)",
           inverse: "hsl(var(--text-inverse) / <alpha-value>)",
