@@ -687,64 +687,64 @@
     --focus-inverse: var(--blue-60);
 
     /* Gray Tag */
-    --tag-background-gray: var(--gray-70);
-    --tag-color-gray: var(--gray-20);
-    --tag-hover-gray: var(--gray-70-hover);
-    --tag-border-gray: var(--gray-50);
+    --tag-background-gray: var(--gray-20);
+    --tag-color-gray: var(--gray-100);
+    --tag-hover-gray: var(--gray-20-hover);
+    --tag-border-gray: var(--gray-40);
 
     /* Cool Gray Tag */
-    --tag-background-cool-gray: var(--cool-gray-70);
-    --tag-color-cool-gray: var(--cool-gray-20);
-    --tag-hover-cool-gray: var(--cool-gray-70-hover);
-    --tag-border-cool-gray: var(--cool-gray-50);
+    --tag-background-cool-gray: var(--cool-gray-20);
+    --tag-color-cool-gray: var(--cool-gray-100);
+    --tag-hover-cool-gray: var(--cool-gray-20-hover);
+    --tag-border-cool-gray: var(--cool-gray-40);
 
     /* Warm Gray Tag */
-    --tag-background-warm-gray: var(--warm-gray-70);
-    --tag-color-warm-gray: var(--warm-gray-20);
-    --tag-hover-warm-gray: var(--warm-gray-70-hover);
-    --tag-border-warm-gray: var(--warm-gray-50);
+    --tag-background-warm-gray: var(--warm-gray-20);
+    --tag-color-warm-gray: var(--warm-gray-100);
+    --tag-hover-warm-gray: var(--warm-gray-20-hover);
+    --tag-border-warm-gray: var(--warm-gray-40);
 
     /* Red Tag */
-    --tag-background-red: var(--red-70);
-    --tag-color-red: var(--red-20);
-    --tag-hover-red: var(--red-70-hover);
-    --tag-border-red: var(--red-50);
+    --tag-background-red: var(--red-20);
+    --tag-color-red: var(--red-70);
+    --tag-hover-red: var(--red-20-hover);
+    --tag-border-red: var(--red-40);
 
     /* Magenta Tag */
-    --tag-background-magenta: var(--magenta-70);
-    --tag-color-magenta: var(--magenta-20);
-    --tag-hover-magenta: var(--magenta-70-hover);
-    --tag-border-magenta: var(--magenta-50);
+    --tag-background-magenta: var(--magenta-20);
+    --tag-color-magenta: var(--magenta-70);
+    --tag-hover-magenta: var(--magenta-20-hover);
+    --tag-border-magenta: var(--magenta-40);
 
     /* Purple Tag */
-    --tag-background-purple: var(--purple-70);
-    --tag-color-purple: var(--purple-20);
-    --tag-hover-purple: var(--purple-70-hover);
-    --tag-border-purple: var(--purple-50);
+    --tag-background-purple: var(--purple-20);
+    --tag-color-purple: var(--purple-70);
+    --tag-hover-purple: var(--purple-20-hover);
+    --tag-border-purple: var(--purple-40);
 
     /* Blue Tag */
-    --tag-background-blue: var(--blue-70);
-    --tag-color-blue: var(--blue-20);
-    --tag-hover-blue: var(--blue-70-hover);
-    --tag-border-blue: var(--blue-50);
+    --tag-background-blue: var(--blue-20);
+    --tag-color-blue: var(--blue-70);
+    --tag-hover-blue: var(--blue-20-hover);
+    --tag-border-blue: var(--blue-40);
 
     /* Cyan Tag */
-    --tag-background-cyan: var(--cyan-70);
-    --tag-color-cyan: var(--cyan-20);
-    --tag-hover-cyan: var(--cyan-70-hover);
-    --tag-border-cyan: var(--cyan-50);
+    --tag-background-cyan: var(--cyan-20);
+    --tag-color-cyan: var(--cyan-70);
+    --tag-hover-cyan: var(--cyan-20-hover);
+    --tag-border-cyan: var(--cyan-40);
 
     /* Teal Tag */
-    --tag-background-teal: var(--teal-70);
-    --tag-color-teal: var(--teal-20);
-    --tag-hover-teal: var(--teal-70-hover);
-    --tag-border-teal: var(--teal-50);
+    --tag-background-teal: var(--teal-20);
+    --tag-color-teal: var(--teal-70);
+    --tag-hover-teal: var(--teal-20-hover);
+    --tag-border-teal: var(--teal-40);
 
     /* Green Tag */
-    --tag-background-green: var(--green-70);
-    --tag-color-green: var(--green-20);
-    --tag-hover-green: var(--green-70-hover);
-    --tag-border-green: var(--green-50);
+    --tag-background-green: var(--green-20);
+    --tag-color-green: var(--green-70);
+    --tag-hover-green: var(--green-20-hover);
+    --tag-border-green: var(--green-40);
 
     /* Miscellaneous Tokens */
     --interactive: var(--blue-50);

@@ -367,58 +367,59 @@ const config = {
         /* Tag */
         tag: {
           "background-gray": "hsl(var(--tag-background-gray) / <alpha-value>)",
-          "color-gray": "hsl(var(--tag-color-gray) / <alpha-value>)",
+          "foreground-gray": "hsl(var(--tag-color-gray) / <alpha-value>)",
           "hover-gray": "hsl(var(--tag-hover-gray) / <alpha-value>)",
           "border-gray": "hsl(var(--tag-border-gray) / <alpha-value>)",
 
           "background-cool-gray":
             "hsl(var(--tag-background-cool-gray) / <alpha-value>)",
-          "color-cool-gray": "hsl(var(--tag-color-cool-gray) / <alpha-value>)",
+          "foreground-cool-gray":
+            "hsl(var(--tag-color-cool-gray) / <alpha-value>)",
           "hover-cool-gray": "hsl(var(--tag-hover-cool-gray) / <alpha-value>)",
           "border-cool-gray":
             "hsl(var(--tag-border-cool-gray) / <alpha-value>)",
 
           "background-warm-gray":
             "hsl(var(--tag-background-warm-gray) / <alpha-value>)",
-          "color-warm-gray": "hsl(var(--warm-gray-100) / <alpha-value>)",
+          "foreground-warm-gray": "hsl(var(--warm-gray-100) / <alpha-value>)",
           "hover-warm-gray": "hsl(var(--warm-gray-20-hover) / <alpha-value>)",
           "border-warm-gray": "hsl(var(--warm-gray-40) / <alpha-value>)",
 
           "background-red": "hsl(var(--tag-background-red) / <alpha-value>)",
-          "color-red": "hsl(var(--tag-color-red) / <alpha-value>)",
+          "foreground-red": "hsl(var(--tag-color-red) / <alpha-value>)",
           "hover-red": "hsl(var(--tag-hover-red) / <alpha-value>)",
           "border-red": "hsl(var(--tag-border-red) / <alpha-value>)",
 
           "background-magenta":
             "hsl(var(--tag-background-magenta) / <alpha-value>)",
-          "color-magenta": "hsl(var(--tag-color-magenta) / <alpha-value>)",
+          "foreground-magenta": "hsl(var(--tag-color-magenta) / <alpha-value>)",
           "hover-magenta": "hsl(var(--tag-hover-magenta) / <alpha-value>)",
           "border-magenta": "hsl(var(--tag-border-magenta) / <alpha-value>)",
 
           "background-purple":
             "hsl(var(--tag-background-purple) / <alpha-value>)",
-          "color-purple": "hsl(var(--tag-color-purple) / <alpha-value>)",
+          "foreground-purple": "hsl(var(--tag-color-purple) / <alpha-value>)",
           "hover-purple": "hsl(var(--tag-hover-purple) / <alpha-value>)",
           "border-purple": "hsl(var(--tag-border-purple) / <alpha-value>)",
 
           "background-blue": "hsl(var(--tag-background-blue) / <alpha-value>)",
-          "color-blue": "hsl(var(--tag-color-blue) / <alpha-value>)",
+          "foreground-blue": "hsl(var(--tag-color-blue) / <alpha-value>)",
           "hover-blue": "hsl(var(--tag-hover-blue) / <alpha-value>)",
           "border-blue": "hsl(var(--tag-border-blue) / <alpha-value>)",
 
           "background-cyan": "hsl(var(--tag-background-cyan) / <alpha-value>)",
-          "color-cyan": "hsl(var(--tag-color-cyan) / <alpha-value>)",
+          "foreground-cyan": "hsl(var(--tag-color-cyan) / <alpha-value>)",
           "hover-cyan": "hsl(var(--tag-hover-cyan) / <alpha-value>)",
           "border-cyan": "hsl(var(--tag-border-cyan) / <alpha-value>)",
 
           "background-teal": "hsl(var(--tag-background-teal) / <alpha-value>)",
-          "color-teal": "hsl(var(--tag-color-teal) / <alpha-value>)",
+          "foreground-teal": "hsl(var(--tag-color-teal) / <alpha-value>)",
           "hover-teal": "hsl(var(--tag-hover-teal) / <alpha-value>)",
           "border-teal": "hsl(var(--tag-border-teal) / <alpha-value>)",
 
           "background-green":
             "hsl(var(--tag-background-green) / <alpha-value>)",
-          "color-green": "hsl(var(--tag-color-green) / <alpha-value>)",
+          "foreground-green": "hsl(var(--tag-color-green) / <alpha-value>)",
           "hover-green": "hsl(var(--tag-hover-green) / <alpha-value>)",
           "border-green": "hsl(var(--tag-border-green) / <alpha-value>)",
         },
