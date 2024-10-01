@@ -274,7 +274,8 @@ const config = {
           "tile-02": "hsl(var(--border-tile-02) / <alpha-value>)",
           "tile-03": "hsl(var(--border-tile-03) / <alpha-value>)",
           inverse: "hsl(var(--border-inverse) / <alpha-value>)",
-          disabled: "hsl(var(--border-disabled) / var(--border-disabled-opacity))",
+          disabled:
+            "hsl(var(--border-disabled) / var(--border-disabled-opacity))",
         },
 
         /* Text */
@@ -358,9 +359,9 @@ const config = {
 
         /* Focus */
         focus: {
-          DEFAULT: "hsl(var(--blue-60) / <alpha-value>)",
-          inset: "hsl(var(--white) / <alpha-value>)",
-          inverse: "hsl(var(--white) / <alpha-value>)",
+          DEFAULT: "hsl(var(--focus) / <alpha-value>)",
+          inset: "hsl(var(--focus-inset) / <alpha-value>)",
+          inverse: "hsl(var(--focus-inverse) / <alpha-value>)",
         },
 
         /* Tag */

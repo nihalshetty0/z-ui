@@ -663,13 +663,13 @@
     --button-primary-hover: var(--blue-60-hover);
     --button-primary-active: var(--blue-80);
 
-    --button-secondary: var(--gray-60);
-    --button-secondary-hover: var(--gray-60-hover);
-    --button-secondary-active: var(--gray-80);
+    --button-secondary: var(--gray-80);
+    --button-secondary-hover: var(--gray-80-hover);
+    --button-secondary-active: var(--gray-60);
 
-    --button-tertiary: var(--white);
-    --button-tertiary-hover: var(--gray-10);
-    --button-tertiary-active: var(--gray-30);
+    --button-tertiary: var(--blue-60);
+    --button-tertiary-hover: var(--blue-60-hover);
+    --button-tertiary-active: var(--blue-80);
 
     --button-danger-primary: var(--red-60);
 
@@ -682,9 +682,9 @@
     --button-disabled: var(--gray-70);
 
     /* Focus */
-    --focus: var(--blue-60);
-    --focus-inset: var(--white);
-    --focus-inverse: var(--white);
+    --focus: var(--white);
+    --focus-inset: var(--gray-100);
+    --focus-inverse: var(--blue-60);
 
     /* Gray Tag */
     --tag-background-gray: var(--gray-70);
