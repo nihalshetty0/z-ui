@@ -11,6 +11,7 @@ export function ThemeToggle() {
     <div className="space-x-1">
       {[
         { value: "light", label: "Light" },
+        { value: "dim", label: "Dim" },
         { value: "dark", label: "Dark" },
         { value: "system", label: "System" },
       ].map(({ value, label }) => (

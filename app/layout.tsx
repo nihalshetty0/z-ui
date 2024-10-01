@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { fontMono, fontSans } from "@/lib/fonts";
 
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Carbon Design System",
@@ -28,13 +28,14 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          themes={["light", "dim", "dark", "system"]}
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
