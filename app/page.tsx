@@ -29,10 +29,15 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Tag } from "@/components/ui/tag";
 import React from "react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <div className="m-5">
+        <ThemeToggle />
+      </div>
+
       <Buttons />
       <Tooltips />
       <Accordions />
@@ -42,7 +47,7 @@ export default function Home() {
       <InputView />
       <TagView />
       <PopoverView />
-    </>
+    </div>
   );
 }
 
@@ -254,10 +259,10 @@ const Tooltips = () => {
       <TooltipProvider delayDuration={0} skipDelayDuration={1000}>
         <Tooltip delayDuration={0}>
           <TooltipTrigger asChild>
-            <button>this</button>
+            <button>Hover me (Tooltip)</button>
           </TooltipTrigger>
           <TooltipContent side="top" align="end">
-            <p>Add to library</p>
+            <p>Great expectations</p>
           </TooltipContent>
         </Tooltip>
 
@@ -265,10 +270,10 @@ const Tooltips = () => {
 
         <Tooltip delayDuration={0}>
           <TooltipTrigger asChild>
-            <button>this</button>
+            <button>Hover me (Tooltip)</button>
           </TooltipTrigger>
           <TooltipContent side="top" align="start">
-            <p>Add to library</p>
+            <p>This is a tooltip</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>{" "}
@@ -389,9 +394,6 @@ const TagView = () => {
 const PopoverView = () => {
   return (
     <div className="p-64">
-      <Button variant="ghost">Open popover</Button>
-      <br />
-      <br />
       <Popover>
         <PopoverTrigger asChild>
           <Button variant="ghost">Open popover</Button>

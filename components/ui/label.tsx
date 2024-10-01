@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const labelVariants = cva("", {
   variants: {
     labelType: {
-      default: "mb-2 block text-gray-70 label-01",
+      default: "mb-2 block text-foreground-secondary label-01",
       checkbox: "body-compact-01",
       radio: "body-compact-01",
     },

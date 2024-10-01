@@ -8,18 +8,21 @@ const tagVariants = cva(
   {
     variants: {
       variant: {
-        blue: "text-blue-80 bg-blue-20",
-        red: "text-red-80 bg-red-20",
-        magenta: "text-magenta-80 bg-magenta-20",
-        purple: "text-purple-80 bg-purple-20",
-        cyan: "text-cyan-80 bg-cyan-20",
-        teal: "text-teal-80 bg-teal-20",
-        green: "text-green-80 bg-green-20",
-        gray: "text-gray-100 bg-gray-20",
-        "cool-gray": "text-cool-gray-100 bg-cool-gray-20",
-        "warm-gray": "text-warm-gray-100 bg-warm-gray-20",
-        "high-contrast": "text-white bg-gray-80",
-        outline: "text-gray-100 bg-white outline outline-1 outline-gray-100",
+        blue: "text-tag-foreground-blue bg-tag-background-blue",
+        red: "text-tag-foreground-red bg-tag-background-red",
+        magenta: "text-tag-foreground-magenta bg-tag-background-magenta",
+        purple: "text-tag-foreground-purple bg-tag-background-purple",
+        cyan: "text-tag-foreground-cyan bg-tag-background-cyan",
+        teal: "text-tag-foreground-teal bg-tag-background-teal",
+        green: "text-tag-foreground-green bg-tag-background-green",
+        gray: "text-tag-foreground-gray bg-tag-background-gray",
+        "cool-gray":
+          "text-tag-foreground-cool-gray bg-tag-background-cool-gray",
+        "warm-gray":
+          "text-tag-foreground-warm-gray bg-tag-background-warm-gray",
+        "high-contrast": "text-foreground-inverse bg-background-inverse",
+        outline:
+          "text-foreground-primary bg-background outline outline-1 outline-background-inverse",
       },
       size: {
         sm: "px-2 h-[18px]",
