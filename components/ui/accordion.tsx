@@ -49,7 +49,7 @@ const accordionItemVariants = cva("relative", {
     isFlush: {
       false: [
         "border-t-[0.5px] [&:last-child]:border-b-[0.5px] border-edge-subtle-00",
-        "hover:border-layer-hover-01 [&+div]:hover:border-layer-hover-01",
+        "[&[data-state=closed]]:hover:border-layer-hover-01 [&[data-state=closed]+div]:hover:border-t-layer-hover-01",
       ],
       true: [
         "border-transparent",
