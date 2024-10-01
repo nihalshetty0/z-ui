@@ -6,26 +6,63 @@ import { cn } from "@/lib/utils";
 
 export const baseButtonVariants = cva(
   [
-    "inline-flex items-start justify-between body-compact-01 whitespace-normal focus-visible:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-button-primary focus:ring-inset focus:ring-focus-inset disabled:pointer-events-none button-press-transition relative ",
+    "inline-flex items-start justify-between body-compact-01 whitespace-normal button-press-transition relative ",
+    "focus-visible:outline-none",
+    "focus:ring-1 focus:ring-offset-1 focus:ring-offset-focus focus:ring-inset focus:ring-focus-inset ",
+    "disabled:pointer-events-none",
     "[&>svg]:h-4 [&>svg]:w-4",
   ],
   {
     variants: {
       variant: {
-        default:
-          "bg-button-primary text-foreground-on-color border border-transparent hover:bg-button-primary-hover focus:border-button-primary active:bg-button-primary-active disabled:bg-button-disabled disabled:text-foreground-on-color-disabled",
-        secondary:
-          "bg-button-secondary text-foreground-on-color border border-transparent hover:bg-button-secondary-hover focus:border-button-primary active:bg-button-secondary-active disabled:bg-button-disabled disabled:text-foreground-on-color-disabled disabled:border-button-disabled",
-        tertiary:
-          "bg-transparent text-button-tertiary border border-button-tertiary hover:bg-button-tertiary-hover hover:text-foreground-inverse active:bg-button-tertiary-active active:text-foreground-inverse focus:bg-button-tertiary focus:text-foreground-inverse disabled:border-button-disabled disabled:text-foreground-on-color-disabled",
-        ghost:
-          "bg-transparent text-link-primary border border-transparent hover:bg-background-hover focus:border-button-primary active:bg-background-active disabled:text-button-disabled",
-        danger:
-          "bg-button-danger-primary text-foreground-on-color border border-transparent hover:bg-button-danger-hover focus:border-button-primary active:bg-button-danger-active disabled:bg-button-disabled disabled:text-foreground-on-color-disabled",
-        "danger-tertiary":
-          "bg-transparent text-button-danger-secondary border border-button-danger-secondary hover:bg-button-danger-hover hover:text-foreground-on-color hover:border-button-danger-hover focus:bg-button-danger-secondary focus:text-foreground-inverse focus:border-button-primary active:bg-button-danger-active active:text-foreground-inverse active:border-button-primary disabled:border-button-disabled disabled:text-foreground-on-color-disabled",
-        "danger-ghost":
-          "bg-transparent text-button-danger-secondary border border-transparent hover:bg-button-danger-hover hover:text-foreground-on-color hover:border-button-danger-hover focus:border-button-primary active:bg-button-danger-active active:text-foreground-inverse active:border-button-primary disabled:text-button-disabled",
+        default: [
+          "bg-button-primary text-foreground-on-color border border-transparent",
+          "hover:bg-button-primary-hover",
+          "focus:border-focus active:bg-button-primary-active",
+          "disabled:bg-button-disabled disabled:text-foreground-on-color-disabled",
+        ],
+        secondary: [
+          "bg-button-secondary text-foreground-on-color border border-transparent",
+          "hover:bg-button-secondary-hover",
+          "focus:border-focus",
+          "active:bg-button-secondary-active",
+          "disabled:bg-button-disabled disabled:text-foreground-on-color-disabled",
+        ],
+        tertiary: [
+          "bg-transparent text-button-tertiary border border-button-tertiary",
+          "hover:bg-button-tertiary-hover hover:text-foreground-inverse hover:border-button-tertiary-hover",
+          "focus:bg-button-tertiary focus:text-foreground-inverse focus:border-focus",
+          "active:bg-button-tertiary-active",
+          "disabled:border-button-disabled disabled:text-foreground-on-color-disabled ",
+        ],
+        ghost: [
+          "bg-transparent text-link-primary border border-transparent ",
+          "hover:bg-background-hover",
+          "focus:border-focus",
+          "active:bg-background-active",
+          "disabled:text-button-disabled",
+        ],
+        danger: [
+          "bg-button-danger-primary text-foreground-on-color border border-transparent",
+          "hover:bg-button-danger-hover",
+          "focus:border-focus",
+          "active:bg-button-danger-active",
+          "disabled:bg-button-disabled disabled:text-foreground-on-color-disabled",
+        ],
+        "danger-tertiary": [
+          "bg-transparent text-button-danger-secondary border border-button-danger-secondary",
+          "hover:bg-button-danger-hover hover:text-foreground-on-color hover:border-button-danger-hover",
+          "focus:bg-button-danger-secondary focus:text-foreground-on-color focus:border-focus",
+          "active:bg-button-danger-active",
+          "disabled:border-button-disabled disabled:text-foreground-on-color-disabled",
+        ],
+        "danger-ghost": [
+          "bg-transparent text-button-danger-secondary border border-transparent",
+          "hover:bg-button-danger-hover hover:text-foreground-on-color",
+          "focus:border-focus",
+          "active:bg-button-danger-active",
+          "disabled:text-button-disabled",
+        ],
       },
     },
     defaultVariants: {
