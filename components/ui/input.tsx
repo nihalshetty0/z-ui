@@ -11,8 +11,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       <input
         type={type}
         className={cn(
-          "aria-[invalid=true]:error-icon-background-image aria-[invalid=true]:shadow-input-invalid input-helper-icon-position focus-visible:shadow-input focus-visible:aria-[invalid=true]:shadow-input h-10 w-full border-b border-edge-strong-01 bg-layer-01 px-4 text-foreground-primary body-01 placeholder:text-foreground-placeholder read-only:border-gray-20 read-only:bg-transparent focus-visible:border-focus focus-visible:outline-none disabled:cursor-not-allowed disabled:border-transparent disabled:bg-layer-01 disabled:text-opacity-25 aria-[invalid=true]:border-support-error focus-visible:aria-[invalid=true]:border-focus",
-          // TODO: add "warn-icon-background-image" class
+          [
+            "aria-[invalid=true]:error-icon-background-image input-helper-icon-position",
+            "h-10 w-full border-b border-edge-strong-01 bg-layer-01 px-4 text-foreground-primary body-01",
+            "placeholder:text-foreground-placeholder read-only:border-gray-20 read-only:bg-transparent",
+            "focus-visible:border-focus focus-visible:shadow-input focus-visible:outline-none",
+            "disabled:cursor-not-allowed disabled:border-transparent disabled:bg-layer-01 disabled:text-opacity-25",
+            "aria-[invalid=true]:border-support-error aria-[invalid=true]:shadow-input-invalid focus-visible:aria-[invalid=true]:border-focus focus-visible:aria-[invalid=true]:shadow-input",
+          ],
           className,
         )}
         ref={ref}
