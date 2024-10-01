@@ -89,7 +89,11 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "group/accordion-trigger flex h-10 flex-1 items-center justify-between px-4 body-01 hover:bg-layer-hover-01 focus:accordion-focus-outline focus-visible:outline-none disabled:cursor-not-allowed disabled:text-foreground-disabled [&[data-state=open]>svg]:rotate-180",
+        "group/accordion-trigger flex h-10 flex-1 items-center justify-between px-4 body-01",
+        "hover:bg-layer-hover-01",
+        "focus:accordion-focus-outline focus-visible:outline-none",
+        "disabled:cursor-not-allowed disabled:text-foreground-disabled",
+        "[&[data-state=open]>svg]:rotate-180",
         "group-data-[accordion-align=start]/accordion-root:flex-row-reverse group-data-[accordion-align=start]/accordion-root:justify-end",
         className,
       )}
