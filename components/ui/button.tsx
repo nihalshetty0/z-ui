@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export const baseButtonVariants = cva(
   [
-    "inline-flex items-start justify-between body-compact-01 whitespace-normal button-press-transition relative ",
+    "inline-flex items-start justify-between body-compact-01 whitespace-normal button-press-transition relative select-none",
     "focus-visible:outline-none",
     "focus:ring-1 focus:ring-offset-1 focus:ring-offset-focus focus:ring-inset focus:ring-focus-inset",
     "disabled:pointer-events-none",

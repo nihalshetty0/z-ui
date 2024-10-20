@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { fontMono, fontSans } from "@/lib/fonts";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export const metadata: Metadata = {
   title: "Carbon Design System",
@@ -34,6 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange
           themes={["light", "dim", "dark", "system"]}
         >
+          <ThemeToggle />
           {children}
         </ThemeProvider>
       </body>

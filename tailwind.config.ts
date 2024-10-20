@@ -435,11 +435,12 @@ const config = {
       },
 
       boxShadow: {
-        popover: "0 2px 2px 0px rgba(0, 0, 0, 0.2)",
+        popover: "0 2px 2px 0 rgba(0, 0, 0, 0.2)",
         input:
           "inset 0 2px 0 0 hsl(var(--focus)), inset -2px 0 0 0 hsl(var(--focus)), inset 2px 0 0 0 hsl(var(--focus)), inset 0 -1px 0 0 hsl(var(--focus))",
         "input-invalid":
           "inset 0 2px 0 0 hsl(var(--red-60)), inset -2px 0 0 0 hsl(var(--red-60)), inset 2px 0 0 0 hsl(var(--red-60)), inset 0 -1px 0 0 hsl(var(--red-60))",
+        menu: "0 2px 6px 0 rgba(0, 0, 0, 0.3)",
       },
     },
   },
@@ -522,6 +523,30 @@ const config = {
           "line-height": "1.125rem",
           "font-weight": "400",
           "letter-spacing": "0.16px",
+        },
+        ".body-short-01": {
+          "font-size": "0.875rem",
+          "font-weight": "400",
+          "line-height": "1.28572",
+          "letter-spacing": "0.16px",
+        },
+        ".body-short-02": {
+          "font-size": "1rem",
+          "font-weight": "400",
+          "line-height": "1.375",
+          "letter-spacing": "0",
+        },
+        ".body-long-01": {
+          "font-size": "0.875rem",
+          "font-weight": "400",
+          "line-height": "1.42857",
+          "letter-spacing": "0.16px",
+        },
+        ".body-long-02": {
+          "font-size": "1rem",
+          "font-weight": "400",
+          "line-height": "1.5",
+          "letter-spacing": "0",
         },
         // fixed heading styles
         ".heading-compact-01": {
