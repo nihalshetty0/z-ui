@@ -41,10 +41,15 @@ export interface TagProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof tagVariants> {}
 
-function Tag({ className, variant, size, ...props }: TagProps) {
-  return (
-    <div className={cn(tagVariants({ variant, size }), className)} {...props} />
-  );
-}
+const Tag = React.forwardRef<HTMLDivElement, TagProps>(
+  ({ className, variant, size, ...props }, ref) => (
+    <div
+      ref={ref}
+      className={cn(tagVariants({ variant, size }), className)}
+      {...props}
+    />
+  ),
+);
+Tag.displayName = "Tag";
 
 export { Tag, tagVariants };
