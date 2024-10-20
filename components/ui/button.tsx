@@ -8,7 +8,7 @@ export const baseButtonVariants = cva(
   [
     "inline-flex items-start justify-between body-compact-01 whitespace-normal button-press-transition relative ",
     "focus-visible:outline-none",
-    "focus:ring-1 focus:ring-offset-1 focus:ring-offset-focus focus:ring-inset focus:ring-focus-inset ",
+    "focus:ring-1 focus:ring-offset-1 focus:ring-offset-focus focus:ring-inset focus:ring-focus-inset",
     "disabled:pointer-events-none",
     "[&>svg]:h-4 [&>svg]:w-4",
   ],

@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 type AccordionContextValue = {
   isFlush: boolean;
+  size: "sm" | "md" | "lg";
 };
 
 const AccordionContext = React.createContext<AccordionContextValue>(
@@ -27,21 +28,30 @@ const Accordion = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root> & {
     align?: "start" | "end";
     isFlush?: boolean;
+    size?: "sm" | "md" | "lg";
   }
->(({ align = "end", className, isFlush = false, ...props }, ref) => {
-  const accordionContextValue = React.useMemo(() => ({ isFlush }), [isFlush]);
+>(
+  (
+    { align = "end", className, isFlush = false, size = "md", ...props },
+    ref,
+  ) => {
+    const accordionContextValue = React.useMemo(
+      () => ({ isFlush, size }),
+      [isFlush, size],
+    );
 
-  return (
-    <AccordionContext.Provider value={accordionContextValue}>
-      <AccordionPrimitive.Root
-        ref={ref}
-        className={cn(className, `group/accordion-root`)}
-        data-accordion-align={align}
-        {...props}
-      />
-    </AccordionContext.Provider>
-  );
-});
+    return (
+      <AccordionContext.Provider value={accordionContextValue}>
+        <AccordionPrimitive.Root
+          ref={ref}
+          className={cn(className, `group/accordion-root`)}
+          data-accordion-align={align}
+          {...props}
+        />
+      </AccordionContext.Provider>
+    );
+  },
+);
 Accordion.displayName = "Accordion";
 
 const accordionItemVariants = cva("relative", {
@@ -84,31 +94,38 @@ AccordionItem.displayName = "AccordionItem";
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
-    <AccordionPrimitive.Trigger
-      ref={ref}
-      className={cn(
-        "group/accordion-trigger flex h-10 flex-1 items-center justify-between px-4 body-01",
-        "hover:bg-layer-hover-01",
-        "focus:accordion-focus-outline focus-visible:outline-none",
-        "disabled:cursor-not-allowed disabled:text-foreground-disabled",
-        "[&[data-state=open]>svg]:rotate-180",
-        "group-data-[accordion-align=start]/accordion-root:flex-row-reverse group-data-[accordion-align=start]/accordion-root:justify-end",
-        className,
-      )}
-      {...props}
-    >
-      {children}
-      <ChevronDownIcon
+>(({ className, children, ...props }, ref) => {
+  const { size } = useAccordionContext();
+
+  return (
+    <AccordionPrimitive.Header className="flex">
+      <AccordionPrimitive.Trigger
+        ref={ref}
         className={cn(
-          "accordion-align-start:mr-2 accordion-align-end:ml-2 h-4 w-4 shrink-0 text-icon-primary transition-transform duration-100 group-disabled/accordion-trigger:text-icon-disabled",
-          "group-data-[accordion-align=start]/accordion-root:mr-4",
+          "group/accordion-trigger flex flex-1 items-center justify-between px-4 body-01",
+          "hover:bg-layer-hover-01",
+          "focus:accordion-focus-outline focus-visible:outline-none",
+          "disabled:cursor-not-allowed disabled:text-foreground-disabled",
+          "group-data-[accordion-align=start]/accordion-root:flex-row-reverse group-data-[accordion-align=start]/accordion-root:justify-end",
+          size === "sm" && "h-8",
+          size === "md" && "h-10",
+          size === "lg" && "h-12",
+          className,
         )}
-      />
-    </AccordionPrimitive.Trigger>
-  </AccordionPrimitive.Header>
-));
+        {...props}
+      >
+        {children}
+        <ChevronDownIcon
+          className={cn(
+            "accordion-align-start:mr-2 accordion-align-end:ml-2 h-4 w-4 shrink-0 text-icon-primary transition-transform duration-100 group-disabled/accordion-trigger:text-icon-disabled",
+            "group-data-[accordion-align=start]/accordion-root:mr-4",
+            "group-data-[state=open]/accordion-trigger:rotate-180",
+          )}
+        />
+      </AccordionPrimitive.Trigger>
+    </AccordionPrimitive.Header>
+  );
+});
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<
