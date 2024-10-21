@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { fontMono, fontSans } from "@/lib/fonts";
 
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/registry/theme-provider";
 
 export const metadata: Metadata = {
   title: "Carbon Design System",
